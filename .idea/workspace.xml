@@ -1,99 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6d533842-6443-401c-9329-a219c225b6e1" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mock/customer.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/models/customer.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/models/customer/detail.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/routes/customer/Filter.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/routes/customer/List.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/routes/customer/List.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/routes/customer/Modal.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/routes/customer/detail/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/routes/customer/detail/index.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/routes/customer/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/services/customer.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/services/customers.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/DataTable/AnimTableBody.js" afterPath="$PROJECT_DIR$/src/components/DataTable/AnimTableBody.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/DataTable/DataTable.js" afterPath="$PROJECT_DIR$/src/components/DataTable/DataTable.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/DropOption/DropOption.js" afterPath="$PROJECT_DIR$/src/components/DropOption/DropOption.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Editor/Editor.js" afterPath="$PROJECT_DIR$/src/components/Editor/Editor.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/FilterItem/FilterItem.js" afterPath="$PROJECT_DIR$/src/components/FilterItem/FilterItem.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Iconfont/Iconfont.js" afterPath="$PROJECT_DIR$/src/components/Iconfont/Iconfont.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Layout/Bread.js" afterPath="$PROJECT_DIR$/src/components/Layout/Bread.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Layout/Footer.js" afterPath="$PROJECT_DIR$/src/components/Layout/Footer.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Layout/Header.js" afterPath="$PROJECT_DIR$/src/components/Layout/Header.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Layout/Menu.js" afterPath="$PROJECT_DIR$/src/components/Layout/Menu.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Layout/Sider.js" afterPath="$PROJECT_DIR$/src/components/Layout/Sider.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Layout/index.js" afterPath="$PROJECT_DIR$/src/components/Layout/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Loader/Loader.js" afterPath="$PROJECT_DIR$/src/components/Loader/Loader.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Search/Search.js" afterPath="$PROJECT_DIR$/src/components/Search/Search.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/index.js" afterPath="$PROJECT_DIR$/src/components/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/layer/layer.js" afterPath="$PROJECT_DIR$/src/components/layer/layer.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/index.js" afterPath="$PROJECT_DIR$/src/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/mock/common.js" afterPath="$PROJECT_DIR$/src/mock/common.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/mock/dashboard.js" afterPath="$PROJECT_DIR$/src/mock/dashboard.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/mock/menu.js" afterPath="$PROJECT_DIR$/src/mock/menu.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/mock/post.js" afterPath="$PROJECT_DIR$/src/mock/post.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/mock/user.js" afterPath="$PROJECT_DIR$/src/mock/user.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/models/app.js" afterPath="$PROJECT_DIR$/src/models/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/models/common.js" afterPath="$PROJECT_DIR$/src/models/common.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/models/dashboard.js" afterPath="$PROJECT_DIR$/src/models/dashboard.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/models/login.js" afterPath="$PROJECT_DIR$/src/models/login.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/models/post.js" afterPath="$PROJECT_DIR$/src/models/post.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/models/user.js" afterPath="$PROJECT_DIR$/src/models/user.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/models/user/detail.js" afterPath="$PROJECT_DIR$/src/models/user/detail.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/router.js" afterPath="$PROJECT_DIR$/src/router.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/routes/UIElement/dataTable/index.js" afterPath="$PROJECT_DIR$/src/routes/UIElement/dataTable/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/routes/UIElement/dropOption/index.js" afterPath="$PROJECT_DIR$/src/routes/UIElement/dropOption/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/routes/UIElement/editor/index.js" afterPath="$PROJECT_DIR$/src/routes/UIElement/editor/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/routes/UIElement/iconfont/emoji.js" afterPath="$PROJECT_DIR$/src/routes/UIElement/iconfont/emoji.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/routes/UIElement/iconfont/index.js" afterPath="$PROJECT_DIR$/src/routes/UIElement/iconfont/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/routes/UIElement/layer/index.js" afterPath="$PROJECT_DIR$/src/routes/UIElement/layer/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/routes/UIElement/search/index.js" afterPath="$PROJECT_DIR$/src/routes/UIElement/search/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/routes/app.js" afterPath="$PROJECT_DIR$/src/routes/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/routes/chart/Container.js" afterPath="$PROJECT_DIR$/src/routes/chart/Container.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/routes/chart/areaChart/index.js" afterPath="$PROJECT_DIR$/src/routes/chart/areaChart/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/routes/chart/barChart/index.js" afterPath="$PROJECT_DIR$/src/routes/chart/barChart/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/routes/chart/lineChart/index.js" afterPath="$PROJECT_DIR$/src/routes/chart/lineChart/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/routes/dashboard/components/browser.js" afterPath="$PROJECT_DIR$/src/routes/dashboard/components/browser.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/routes/dashboard/components/comments.js" afterPath="$PROJECT_DIR$/src/routes/dashboard/components/comments.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/routes/dashboard/components/completed.js" afterPath="$PROJECT_DIR$/src/routes/dashboard/components/completed.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/routes/dashboard/components/cpu.js" afterPath="$PROJECT_DIR$/src/routes/dashboard/components/cpu.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/routes/dashboard/components/index.js" afterPath="$PROJECT_DIR$/src/routes/dashboard/components/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/routes/dashboard/components/numberCard.js" afterPath="$PROJECT_DIR$/src/routes/dashboard/components/numberCard.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/routes/dashboard/components/quote.js" afterPath="$PROJECT_DIR$/src/routes/dashboard/components/quote.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/routes/dashboard/components/recentSales.js" afterPath="$PROJECT_DIR$/src/routes/dashboard/components/recentSales.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/routes/dashboard/components/sales.js" afterPath="$PROJECT_DIR$/src/routes/dashboard/components/sales.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/routes/dashboard/components/user.js" afterPath="$PROJECT_DIR$/src/routes/dashboard/components/user.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/routes/dashboard/components/weather.js" afterPath="$PROJECT_DIR$/src/routes/dashboard/components/weather.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/routes/dashboard/index.js" afterPath="$PROJECT_DIR$/src/routes/dashboard/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/routes/error/index.js" afterPath="$PROJECT_DIR$/src/routes/error/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/routes/login/index.js" afterPath="$PROJECT_DIR$/src/routes/login/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/routes/post/List.js" afterPath="$PROJECT_DIR$/src/routes/post/List.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/routes/post/index.js" afterPath="$PROJECT_DIR$/src/routes/post/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/routes/request/index.js" afterPath="$PROJECT_DIR$/src/routes/request/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/routes/user/Filter.js" afterPath="$PROJECT_DIR$/src/routes/user/Filter.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/routes/user/List.js" afterPath="$PROJECT_DIR$/src/routes/user/List.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/routes/user/Modal.js" afterPath="$PROJECT_DIR$/src/routes/user/Modal.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/routes/user/detail/index.js" afterPath="$PROJECT_DIR$/src/routes/user/detail/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/routes/user/index.js" afterPath="$PROJECT_DIR$/src/routes/user/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/services/app.js" afterPath="$PROJECT_DIR$/src/services/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/services/dashboard.js" afterPath="$PROJECT_DIR$/src/services/dashboard.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/services/login.js" afterPath="$PROJECT_DIR$/src/services/login.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/services/menus.js" afterPath="$PROJECT_DIR$/src/services/menus.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/services/posts.js" afterPath="$PROJECT_DIR$/src/services/posts.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/services/user.js" afterPath="$PROJECT_DIR$/src/services/user.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/services/users.js" afterPath="$PROJECT_DIR$/src/services/users.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/services/weather.js" afterPath="$PROJECT_DIR$/src/services/weather.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/utils/city.js" afterPath="$PROJECT_DIR$/src/utils/city.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/utils/config.js" afterPath="$PROJECT_DIR$/src/utils/config.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/utils/enums.js" afterPath="$PROJECT_DIR$/src/utils/enums.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/utils/index.js" afterPath="$PROJECT_DIR$/src/utils/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/utils/request.js" afterPath="$PROJECT_DIR$/src/utils/request.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/utils/theme.js" afterPath="$PROJECT_DIR$/src/utils/theme.js" />
-    </list>
+    <list default="true" id="6d533842-6443-401c-9329-a219c225b6e1" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -456,12 +364,12 @@
       <workItem from="1503881771662" duration="28001000" />
       <workItem from="1503967935985" duration="31743000" />
       <workItem from="1504053984828" duration="29609000" />
-      <workItem from="1504141829510" duration="4877000" />
+      <workItem from="1504141829510" duration="5120000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="197380000" />
+    <option name="totallyTimeSpent" value="197623000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">

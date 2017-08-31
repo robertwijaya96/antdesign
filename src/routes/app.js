@@ -10,6 +10,9 @@ import { Helmet } from 'react-helmet'
 import '../themes/index.less'
 import './app.less'
 import Error from './error'
+import { LocaleProvider } from 'antd'
+import enUS from 'antd/lib/locale-provider/en_US'
+
 
 const { prefix, openPages } = config
 
@@ -32,7 +35,6 @@ const App = ({ children, dispatch, app, loading, location }) => {
       lastHref = href
     }
   }
-
   const headerProps = {
     menu,
     user,
@@ -86,21 +88,23 @@ const App = ({ children, dispatch, app, loading, location }) => {
         {iconFontJS && <script src={iconFontJS} />}
         {iconFontCSS && <link rel="stylesheet" href={iconFontCSS} />}
       </Helmet>
-      <div className={classnames(styles.layout, { [styles.fold]: isNavbar ? false : siderFold }, { [styles.withnavbar]: isNavbar })}>
-        {!isNavbar ? <aside className={classnames(styles.sider, { [styles.light]: !darkTheme })}>
-          <Sider {...siderProps} />
-        </aside> : ''}
-        <div className={styles.main}>
-          <Header {...headerProps} />
-          <Bread {...breadProps} />
-          <div className={styles.container}>
-            <div className={styles.content}>
-              {hasPermission ? children : <Error />}
+      <LocaleProvider locale={enUS}>
+        <div className={classnames(styles.layout, { [styles.fold]: isNavbar ? false : siderFold }, { [styles.withnavbar]: isNavbar })}>
+          {!isNavbar ? <aside className={classnames(styles.sider, { [styles.light]: !darkTheme })}>
+            <Sider {...siderProps} />
+          </aside> : ''}
+          <div className={styles.main}>
+            <Header {...headerProps} />
+            <Bread {...breadProps} />
+            <div className={styles.container}>
+              <div className={styles.content}>
+                {hasPermission ? children : <Error />}
+              </div>
             </div>
+            <Footer />
           </div>
-          <Footer />
         </div>
-      </div>
+      </LocaleProvider>
     </div>
   )
 }

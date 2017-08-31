@@ -12,11 +12,15 @@ import {
 import styles from './index.less'
 
 const { api } = config
-const { dashboard, users, userLogin, user, v1test, v2test } = api
+const { dashboard, users, userLogin, user, v1test, v2test, customer, customers } = api
 
 const requestOptions = [
   {
     url: user.replace('/:id', ''),
+    desc: 'intercept request by mock.js',
+  },
+  {
+    url: customer.replace('/:id', ''),
     desc: 'intercept request by mock.js',
   },
   {
@@ -37,6 +41,10 @@ const requestOptions = [
     desc: 'intercept request by mock.js',
   },
   {
+    url: customers,
+    desc: 'intercept request by mock.js',
+  },
+  {
     url: user,
     desc: 'intercept request by mock.js',
     data: Mock.mock({
@@ -44,7 +52,31 @@ const requestOptions = [
     }),
   },
   {
+    url: customer,
+    desc: 'intercept request by mock.js',
+    data: Mock.mock({
+      id: '@id',
+    }),
+  },
+  {
     url: user.replace('/:id', ''),
+    desc: 'intercept request by mock.js',
+    method: 'post',
+    data: Mock.mock({
+      name: '@cname',
+      nickName: '@last',
+      phone: /^1[34578]\d{9}$/,
+      'age|11-99': 1,
+      address: '@county(true)',
+      isMale: '@boolean',
+      email: '@email',
+      avatar () {
+        return Mock.Random.image('100x100', Mock.Random.color(), '#757575', 'png', this.nickName.substr(0, 1))
+      },
+    }),
+  },
+  {
+    url: customer.replace('/:id', ''),
     desc: 'intercept request by mock.js',
     method: 'post',
     data: Mock.mock({
@@ -70,7 +102,24 @@ const requestOptions = [
     }),
   },
   {
+    url: customer,
+    desc: 'intercept request by mock.js',
+    method: 'patch',
+    data: Mock.mock({
+      id: '@id',
+      name: '@cname',
+    }),
+  },
+  {
     url: user,
+    desc: 'intercept request by mock.js',
+    method: 'delete',
+    data: Mock.mock({
+      id: '@id',
+    }),
+  },
+  {
+    url: customer,
     desc: 'intercept request by mock.js',
     method: 'delete',
     data: Mock.mock({

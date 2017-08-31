@@ -37,6 +37,11 @@ class Search extends React.Component {
     })
     this.handleSearch()
   }
+  handleCari = () => {
+    ReactDOM.findDOMNode(this.refs.container).style = { display: 'block' }
+  }
+
+
   render () {
     const { size, select, selectOptions, selectProps, style, keyword } = this.props
     const { clearVisible } = this.state
@@ -47,6 +52,7 @@ class Search extends React.Component {
         </Select>}
         <Input ref="searchInput" size={size} onChange={this.handleInputChange} onPressEnter={this.handleSearch} defaultValue={keyword} />
         <Button size={size} type="primary" onClick={this.handleSearch}>搜索</Button>
+        <Button size={size} type="primary" onClick={this.handleCari}>Cari</Button>
         {clearVisible && <Icon type="cross" onClick={this.handleClearInput} />}
       </Input.Group>
     )

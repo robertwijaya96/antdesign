@@ -69,7 +69,7 @@ const IcoPage = () => {
             },
             {
               props: 'confirmLoading',
-              desciption: '确定按钮 loading',
+              desciption: '按钮 loading',
               type: 'boolean',
               default: '无',
             },
@@ -81,7 +81,7 @@ const IcoPage = () => {
             },
             {
               props: 'onOk',
-              desciption: '点击确定回调',
+              desciption: '点击回调',
               type: 'function(e)',
               default: '无',
             },

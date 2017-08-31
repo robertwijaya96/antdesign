@@ -4,6 +4,7 @@ import createLoading from 'dva-loading'
 import { browserHistory } from 'dva/router'
 import 'babel-polyfill'
 
+
 // 1. Initialize
 const app = dva({
   ...createLoading({
@@ -23,3 +24,4 @@ app.router(require('./router'))
 
 // 4. Start
 app.start('#root')
+

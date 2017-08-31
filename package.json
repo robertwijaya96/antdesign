@@ -3,7 +3,7 @@
   "name": "antd-admin",
   "version": "4.3.2",
   "dependencies": {
-    "antd": "^2.11.2",
+    "antd": "^2.12.7",
     "axios": "^0.16.2",
     "babel-polyfill": "^6.23.0",
     "classnames": "^2.2.5",
@@ -51,7 +51,9 @@
     "redbox-react": "^1.2.10",
     "roadhog": "1.0.0-beta.7"
   },
-  "pre-commit": ["lint"],
+  "pre-commit": [
+    "lint"
+  ],
   "scripts": {
     "dev": "set BROWSER=none&&set HOST=0.0.0.0&&roadhog server",
     "lint": "eslint --fix --ext .js src",
@@ -59,4 +61,5 @@
     "build:dll": "roadhog buildDll",
     "build:new": "node version && roadhog build"
   }
+
 }

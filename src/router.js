@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import { Router } from 'dva/router'
 import App from 'routes/app'
 
+
 const registerModel = (app, model) => {
   if (!(app._models.filter(m => m.namespace === model.namespace).length === 1)) {
     app.model(model)
@@ -37,7 +38,17 @@ const Routers = function ({ history, app }) {
               cb(null, require('routes/user/'))
             }, 'user')
           },
-        }, {
+        },
+        {
+          path: 'customer',
+          getComponent (nextState, cb) {
+            require.ensure([], (require) => {
+              registerModel(app, require('models/customer'))
+              cb(null, require('routes/customer/'))
+            }, 'customer')
+          },
+        },
+        {
           path: 'user/:id',
           getComponent (nextState, cb) {
             require.ensure([], (require) => {

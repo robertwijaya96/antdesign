@@ -7,33 +7,56 @@ import List from './List'
 import Filter from './Filter'
 import Modal from './Modal'
 
-const User = ({ location, dispatch, user, loading }) => {
-  const { list, pagination, currentItem, modalVisible, modalType, isMotion, selectedRowKeys } = user
+
+const Customer = ({ location, dispatch, customer, loading }) => {
+  const { list, pagination, currentItem, modalVisible, searchVisible, modalType, isMotion, selectedRowKeys } = customer
   const { pageSize } = pagination
 
+  console.log('Customer Visible',searchVisible)
   const modalProps = {
     item: modalType === 'create' ? {} : currentItem,
     visible: modalVisible,
     maskClosable: false,
-    confirmLoading: loading.effects['user/update'],
-    title: `${modalType === 'create' ? 'Create User' : 'Update User'}`,
+    confirmLoading: loading.effects['customer/update'],
+    title: `${modalType === 'create' ? 'Create Customer' : 'Update Customer'}`,
     wrapClassName: 'vertical-center-modal',
     onOk (data) {
       dispatch({
-        type: `user/${modalType}`,
+        type: `customer/${modalType}`,
         payload: data,
       })
     },
     onCancel () {
       dispatch({
-        type: 'user/hideModal',
+        type: 'customer/hideModal',
       })
     },
   }
 
+  // const colProps = {
+  //   item: modalType === 'create' ? {} : currentItem,
+  //   visible: searchVisible,
+  //   maskClosable: false,
+  //   confirmLoading: loading.effects['customer/update'],
+  //   title: `${modalType === 'create' ? 'Create Customer' : 'Update Customer'}`,
+  //   wrapClassName: 'vertical-center-modal',
+  //   onOk (data) {
+  //     dispatch({
+  //       type: 'customer/showCol',
+  //       payload: data,
+  //     })
+  //   },
+  //   onCancel () {
+  //     dispatch({
+  //       type: 'customer/hideCol',
+  //     })
+  //   },
+  // }
+
+
   const listProps = {
     dataSource: list,
-    loading: loading.effects['user/query'],
+    loading: loading.effects['customer/query'],
     pagination,
     location,
     isMotion,
@@ -50,13 +73,13 @@ const User = ({ location, dispatch, user, loading }) => {
     },
     onDeleteItem (id) {
       dispatch({
-        type: 'user/delete',
+        type: 'customer/delete',
         payload: id,
       })
     },
     onEditItem (item) {
       dispatch({
-        type: 'user/showModal',
+        type: 'customer/showModal',
         payload: {
           modalType: 'update',
           currentItem: item,
@@ -67,7 +90,7 @@ const User = ({ location, dispatch, user, loading }) => {
       selectedRowKeys,
       onChange: (keys) => {
         dispatch({
-          type: 'user/updateState',
+          type: 'customer/updateState',
           payload: {
             selectedRowKeys: keys,
           },
@@ -77,6 +100,10 @@ const User = ({ location, dispatch, user, loading }) => {
   }
 
   const filterProps = {
+    item: modalType === 'create' ? {} : currentItem,
+    searchVisible: searchVisible,
+    maskClosable: false,
+    wrapClassName: 'vertical-center-modal',
     isMotion,
     filter: {
       ...location.query,
@@ -93,31 +120,45 @@ const User = ({ location, dispatch, user, loading }) => {
     },
     onSearch (fieldsValue) {
       fieldsValue.keyword.length ? dispatch(routerRedux.push({
-        pathname: '/user',
+        pathname: '/customer',
         query: {
           field: fieldsValue.field,
           keyword: fieldsValue.keyword,
         },
       })) : dispatch(routerRedux.push({
-        pathname: '/user',
+        pathname: '/customer',
       }))
     },
     onAdd () {
       dispatch({
-        type: 'user/showModal',
+        type: 'customer/showModal',
         payload: {
           modalType: 'create',
         },
       })
     },
+    onShow () {
+      dispatch({
+        type: 'customer/showCol',
+        payload: {
+          modalType: 'create',
+        },
+      })
+    },
+    onHide (data) {
+      dispatch({
+        type: 'customer/hideCol',
+        payload: data,
+      })
+    },
     switchIsMotion () {
-      dispatch({ type: 'user/switchIsMotion' })
+      dispatch({ type: 'customer/switchIsMotion' })
     },
   }
 
   const handleDeleteItems = () => {
     dispatch({
-      type: 'user/multiDelete',
+      type: 'customer/multiDelete',
       payload: {
         ids: selectedRowKeys,
       },
@@ -134,23 +175,24 @@ const User = ({ location, dispatch, user, loading }) => {
             {`Selected ${selectedRowKeys.length} items `}
             <Popconfirm title={'Are you sure delete these items?'} placement="left" onConfirm={handleDeleteItems}>
               <Button type="primary" size="large" style={{ marginLeft: 8 }}>Remove</Button>
-              <Button type="primary">Primary</Button>
+
             </Popconfirm>
           </Col>
         </Row>
       }
       <List {...listProps} />
+
       {modalVisible && <Modal {...modalProps} />}
 
     </div>
   )
 }
 
-User.propTypes = {
-  user: PropTypes.object,
+Customer.propTypes = {
+  customer: PropTypes.object,
   location: PropTypes.object,
   dispatch: PropTypes.func,
   loading: PropTypes.object,
 }
 
-export default connect(({ user, loading }) => ({ user, loading }))(User)
+export default connect(({ customer, loading }) => ({ customer, loading }))(Customer)

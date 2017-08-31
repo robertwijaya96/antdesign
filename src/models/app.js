@@ -8,6 +8,7 @@ import { EnumRoleType } from 'enums'
 import { query, logout } from 'services/app'
 import * as menusService from 'services/menus'
 
+
 const { prefix } = config
 
 export default {
@@ -65,6 +66,7 @@ export default {
               item.bpid ? permissions.visit.includes(item.bpid) : true,
             ]
             return cases.every(_ => _)
+
           })
         }
         yield put({
